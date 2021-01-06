@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/gray">
+
+        <TextView
+            android:id="@+id/tvSourceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Source: "
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSourceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="Source name"
+            android:textStyle="bold|italic"
+
+            android:paddingHorizontal="2dp"
+            app:layout_constraintTop_toTopOf="@id/tvSourceLabel"
+            app:layout_constraintStart_toEndOf="@id/tvSourceLabel"/>
+
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Published: "
+
+            app:layout_constraintTop_toBottomOf="@id/tvSourceLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPublishedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="10 Jan 2020"
+            android:textStyle="bold|italic"
+
+            android:paddingHorizontal="2sp"
+            app:layout_constraintTop_toTopOf="@id/tvDateLabel"
+            app:layout_constraintStart_toEndOf="@id/tvDateLabel"
+            />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:text="asdfk gsdkfgksbd ajglb asdlkug sdajbsdi fg lkdsf iuglb adfsliyg dsfagbla bsdgwfqa lgo fgi gaisgdbli gbsaigaosv uyv lwfegal vg lvbj jloi gigasvdd ogfoi gay ggdavs g sdoagyo csgyauvas ukvvbdyugfew gacasb agouyga ycajsb afgioagilgdc laisvacjhs hw oiegofig ladsjdsvh kjdsavk asdvuy cayca jkyuasd uads avkcagy ljadvs ksdak vpoiujyhtgrfe,likmujnyhbtgvrfe ,mnbvcnjyhbtgv mikujnyhbtgrflk,jmbnvck8ij7uh6yg5tfr,mnbcvnu bytvljmhngfodiuytrmnbvciuytr mi8.uylkjhbgvcxiuytlrkjhgfdxkjuyt,rmenbvcxuyt ,mobivcuyt"
+            android:justificationMode="inter_word"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvDateLabel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tvMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Find out more"
+            android:textSize="10sp"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
